@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import tomatoGif from "@/assets/tomato.gif";
 
@@ -22,40 +23,46 @@ export const WelcomeModal = ({ onNameSubmit }: WelcomeModalProps) => {
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogContent className="pixel-card max-w-md text-center">
-        <DialogHeader>
-          <DialogTitle className="text-2xl mb-4 text-primary">Welcome to Tometo! 🍅</DialogTitle>
+      <DialogContent className="pixel-card max-w-md">
+        <DialogHeader className="space-y-3">
+          <div className="flex justify-center">
+            <img 
+              src={tomatoGif} 
+              alt="Tomato friend" 
+              className="w-20 h-20 hover-float animate-fade-in"
+              style={{ imageRendering: 'pixelated' }}
+            />
+          </div>
+          <DialogTitle className="text-3xl text-center text-primary animate-fade-in">
+            Welcome to Tometo! 🍅
+          </DialogTitle>
+          <DialogDescription className="text-center text-muted-foreground">
+            Your friendly Pomodoro timer companion
+          </DialogDescription>
         </DialogHeader>
-        <div className="flex flex-col items-center gap-6">
-          <img 
-            src={tomatoGif} 
-            alt="Tomato friend" 
-            className="w-24 h-24 hover-float"
-            style={{ imageRendering: 'pixelated' }}
-          />
-          <p className="text-sm leading-relaxed">
-            Hi there! I'm Tometo, your friendly productivity companion.
-            <br />
-            What should I call you?
-          </p>
-          <form onSubmit={handleSubmit} className="w-full space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-6 mt-6">
+          <div className="space-y-2">
+            <Label htmlFor="name" className="text-sm font-bold text-foreground">
+              What's your name?
+            </Label>
             <Input
-              type="text"
-              placeholder="Enter your name..."
+              id="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
+              placeholder="Enter your name..."
               className="pixel-border text-center text-lg"
+              autoFocus
               maxLength={20}
             />
-            <Button 
-              type="submit" 
-              className="pixel-button w-full"
-              disabled={!name.trim()}
-            >
-              Let's Go!
-            </Button>
-          </form>
-        </div>
+          </div>
+          <Button 
+            type="submit" 
+            className="w-full pixel-button text-base py-6"
+            disabled={!name.trim()}
+          >
+            Let's Start! 🚀
+          </Button>
+        </form>
       </DialogContent>
     </Dialog>
   );

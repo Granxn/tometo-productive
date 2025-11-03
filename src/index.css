@@ -163,17 +163,24 @@ All colors MUST be HSL.
   }
   
   .pixel-button {
-    @apply pixel-border bg-primary text-primary-foreground px-6 py-3 rounded-md font-bold;
+    @apply pixel-border bg-primary text-primary-foreground px-6 py-3 rounded-md font-bold uppercase tracking-wide;
     transition: all 0.2s ease;
+    text-shadow: 2px 2px 0 hsl(var(--pixel-shadow) / 0.3);
   }
   
   .pixel-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 0 hsl(var(--pixel-shadow));
+    box-shadow: 0 6px 0 hsl(var(--pixel-shadow));
   }
   
   .pixel-button:active {
     transform: translateY(0);
     box-shadow: none;
+  }
+  
+  .pixel-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
   }
 }
