@@ -1,73 +1,45 @@
-# Welcome to your Lovable project
+# 🍅 Tomato Productive — Pixel Pomodoro Timer
 
-## Project info
+**Live Demo: https://granxn.github.io/tomato-productive**
+**Repository: https://github.com/Granxn/tomato-productive**
 
-**URL**: https://lovable.dev/projects/09b231bc-70c4-40b4-a466-9b84b39db662
+---
 
-## How can I edit this code?
+## ⭐ Project Overview
 
-There are several ways of editing your application.
+A cute **pixel-art themed** web app that combines a **Pomodoro Timer** with a simple task list. This project was built to practice core JavaScript logic, DOM manipulation, and data persistence using Local Storage.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/09b231bc-70c4-40b4-a466-9b84b39db662) and start prompting.
+## ✅ Key Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- ⏱ **Pomodoro Timer:** Fully functional timer with Pomodoro (25 min), Short Break, and Long Break modes.
+- 📝 **Task Management:** Users can add, edit, delete, and mark tasks as complete.
+- 💾 **Persistent Data:** All tasks are saved automatically to the browser's **Local Storage**, so your list is always there when you return.
+- 🎨 **Cute Pixel Theme:** A friendly, non-distracting pixel art style to make productivity fun.
+- ✨ **UI Feedback:** Includes notifications for adding/deleting tasks.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠 Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **JavaScript (ES6+)**
+- **HTML5**
+- **CSS3**
+- **GitHub Pages:** Deployed as a static site.
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 💡 Learning Highlight
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+The core challenge was managing the application's state (timer status, task list) using only vanilla JavaScript and interacting directly with the DOM.
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 📸 Screenshots
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/09b231bc-70c4-40b4-a466-9b84b39db662) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+| Main Timer | Empty Task List |
+| :---: | :---: |
+| <img src="images/dashboard.png" alt="Main Pomodoro Timer" width="400"> | <img src="images/NoTask.png" alt="Empty Task List" width="400"> |
+| **UI Feedback** | **Tasks in Progress** |
+| <img src="images/feedback.png" alt="Task Added Notification" width="400"> | <img src="images/task.png" alt="Task List with Completed Items" width="400"> |
