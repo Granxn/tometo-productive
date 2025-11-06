@@ -11,7 +11,7 @@ A cute **pixel-art themed** web app that combines a **Pomodoro Timer** with a si
 
 ---
 
-## ✅ Key Features
+## 💗 Key Features
 
 - ⏱ **Pomodoro Timer:** Fully functional timer with Pomodoro (25 min), Short Break, and Long Break modes.
 - 📝 **Task Management:** Users can add, edit, delete, and mark tasks as complete.
@@ -21,7 +21,7 @@ A cute **pixel-art themed** web app that combines a **Pomodoro Timer** with a si
 
 ---
 
-## 🛠 Tech Stack
+## 🍀 Tech Stack
 
 - **JavaScript (ES6+)**
 - **HTML5**
